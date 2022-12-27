@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 342px; 
+    border: 1px solid gray;
+}
+
+.card.selected {
+    border: 1px solid red;
+}
+
+.card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card .ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
